@@ -1,13 +1,18 @@
 package tests;
-import base.BaseTest;
-import io.qameta.allure.testng.AllureTestNg;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
 import java.util.List;
 import java.util.Set;
-import static org.testng.Assert.*;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import base.BaseTest;
+import io.qameta.allure.testng.AllureTestNg;
 
 @Listeners({AllureTestNg.class})
 public class TestCases extends BaseTest {
